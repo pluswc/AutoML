@@ -44,6 +44,7 @@ idx = h2o.which(train[,"Class"] == "1") %>%
   .[1:100, "C1"] %>% 
   .$C1
 
+
 start_time = Sys.time()
 print(start_time)
 aml <- h2o.automl(x = predictors, y = response,
